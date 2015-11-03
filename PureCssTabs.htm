@@ -1,0 +1,39 @@
+<body class="skin">
+
+
+<style>
+#tabs,
+#tabs >input:before{position:relative;display:block;}
+#tabs >input{display:inline-block;margin:0;padding:0;border:0;outline:0;-webkit-appearance:none;}
+#tabs >input:before{content:attr(id);cursor:pointer;border:1px solid;padding:4px 8px;margin:0 -4px 0 0;}
+#tabs >input+div{position:absolute;display:none;top:22px;left:0;right:0;bottom:auto;padding:25px;border:1px solid;}
+#tabs >input:checked+div{z-index:1;display:block;}
+#tabs >input:checked:before{z-index:2;top:2px;padding-bottom:2px;border-bottom:0;}
+.skin #tabs >input:before{font:bold 12px/14px sans-serif;color:#555;background:#ccc;border-color:#bbb #bbb red #bbb;}
+.skin #tabs >input:checked:before,
+.skin #tabs >input+div{background:#ddd;border-color:#bbb;}
+</style>
+
+
+<div id="tabs">
+
+	<input type="radio" name="tab" checked id="Tab 1">
+	<div>
+		<h3>1</h3><p>Lorem Ipsum Dolor Sit</p>
+	</div>
+
+	<input type="radio" name="tab" id="Tab 2">
+	<div>
+		<h3>2</h3><p>Lorem Ipsum Dolor Sit</p>
+	</div>
+
+	<input type="radio" name="tab" id="Tab 3">
+	<div>
+		<h3>3</h3><p>Lorem Ipsum Dolor Sit</p>
+	</div>
+
+</div>
+
+
+
+</body>
